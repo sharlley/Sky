@@ -24,6 +24,9 @@
 		76FBD30321F99331001466D0 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD30221F99331001466D0 /* URLSessionDataTaskProtocol.swift */; };
 		76FBD30521F99388001466D0 /* URLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD30421F99388001466D0 /* URLSessionDataTask.swift */; };
 		76FBD30721F995A0001466D0 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD30621F995A0001466D0 /* MockURLSessionDataTask.swift */; };
+		76FBD30A21FAEC4E001466D0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD30921FAEC4E001466D0 /* WeatherViewController.swift */; };
+		76FBD30C21FAF34A001466D0 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD30B21FAF34A001466D0 /* CurrentWeatherViewController.swift */; };
+		76FBD30E21FAF42C001466D0 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBD30D21FAF42C001466D0 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		76FBD30221F99331001466D0 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		76FBD30421F99388001466D0 /* URLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTask.swift; sourceTree = "<group>"; };
 		76FBD30621F995A0001466D0 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		76FBD30921FAEC4E001466D0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		76FBD30B21FAF34A001466D0 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
+		76FBD30D21FAF42C001466D0 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				76CCF6B421F83C8E00BA94C5 /* ViewController.swift */,
+				76FBD30821FAEC3C001466D0 /* WeatherViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,6 +229,7 @@
 			children = (
 				76FBD2FE21F9925F001466D0 /* URLSession.swift */,
 				76FBD30421F99388001466D0 /* URLSessionDataTask.swift */,
+				76FBD30D21FAF42C001466D0 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +241,15 @@
 				76FBD30221F99331001466D0 /* URLSessionDataTaskProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		76FBD30821FAEC3C001466D0 /* WeatherViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				76FBD30921FAEC4E001466D0 /* WeatherViewController.swift */,
+				76FBD30B21FAF34A001466D0 /* CurrentWeatherViewController.swift */,
+			);
+			path = WeatherViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,12 +388,15 @@
 				76CCF6EF21F86A2700BA94C5 /* WeatherDataManager.swift in Sources */,
 				76FBD30321F99331001466D0 /* URLSessionDataTaskProtocol.swift in Sources */,
 				76FBD30521F99388001466D0 /* URLSessionDataTask.swift in Sources */,
+				76FBD30E21FAF42C001466D0 /* Double.swift in Sources */,
 				76FBD2FF21F9925F001466D0 /* URLSession.swift in Sources */,
 				76CCF6B521F83C8E00BA94C5 /* ViewController.swift in Sources */,
 				76CCF6EC21F8673900BA94C5 /* WeatherData.swift in Sources */,
 				76CCF6B321F83C8E00BA94C5 /* AppDelegate.swift in Sources */,
 				76CCF6EA21F865BC00BA94C5 /* Location.swift in Sources */,
 				76CCF6E721F8656000BA94C5 /* Configuratioin.swift in Sources */,
+				76FBD30A21FAEC4E001466D0 /* WeatherViewController.swift in Sources */,
+				76FBD30C21FAF34A001466D0 /* CurrentWeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
