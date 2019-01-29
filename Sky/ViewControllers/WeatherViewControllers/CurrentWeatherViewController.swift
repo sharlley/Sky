@@ -61,8 +61,7 @@ class CurrentWeatherViewController: WeatherViewController {
     }
     
     
-    private func updateWeatherContainer(
-        with data: WeatherData, at location: Location) {
+    private func updateWeatherContainer(with data: WeatherData, at location: Location) {
         weatherContainerView.isHidden = false
         
         // 1. Set location
