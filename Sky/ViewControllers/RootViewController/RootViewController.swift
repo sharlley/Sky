@@ -25,6 +25,7 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         
         setupActiveNotification()
+        
     }
 
     private func fetchWeather() {
@@ -37,7 +38,7 @@ class RootViewController: UIViewController {
             if let error = error {
                 dump(error)
             } else if let response = response {
-                self.currentWeatherViewController.now = response
+                self.currentWeatherViewController.viewModel?.weather = response
             }
         })
     }
@@ -49,9 +50,10 @@ class RootViewController: UIViewController {
             if let error = error {
                 dump(error)
             } else if let city = placemarks?.first?.locality {
-                self.currentWeatherViewController.location = Location(name: city,
-                                                                      latitude: currentLocation.coordinate.latitude,
-                                                                      longitude: currentLocation.coordinate.longitude)
+                let location = Location(name: city,
+                                        latitude: currentLocation.coordinate.latitude,
+                                        longitude: currentLocation.coordinate.longitude)
+                self.currentWeatherViewController.viewModel?.location = location
             }
         }
     }
@@ -95,6 +97,7 @@ class RootViewController: UIViewController {
                 fatalError("Invalid destination view controller!")
             }
             destination.delegate = self
+            destination.viewModel = CurrentWeatherViewModel()
             currentWeatherViewController = destination
         default:
             break
